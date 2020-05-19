@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'K2D';
+    background-image: url(../img/fond.jpg);
+}
+
+header img{
+    max-width: 100%;
+    height: auto;
+}
+#conteneur {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #001500;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    overflow: hidden;
+}
+
+header {
+    margin-bottom: 2%;
+}
+
+/* style du menu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-width: 1280px;
+}
+
+#menu li {
+    position: relative;
+    width: 100%;
+}
+
+#menu li a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 6px 0;
+}
+
+#menu li a:hover {
+    color: darkgreen;
+}
+
+#sous-menu {
+    display: none;
+}
+
+#menu li:hover #sous-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+#sous-menu li {
+    border: 1px solid transparent;
+}
+
+/* fin style menu */
+/* début style main */
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/* fin style main */
+/* début style aside */
+#événements {
+    background-color: white;
+    color: black;
+    width: 28%;
+    height: 20%;
+    margin-bottom: 20%;
+}
+#evenements img{
+    max-width: 100%;
+    height: auto;
+}
+#inscrire {
+    display: block;
+    width: 100%;
+    background-color: #001500;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* fin style aside */
+
+/* début style bloc de droite */
+#droite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 60%;
+    text-align: justify;
+}
+#bienvenue {
+    width: 100%;
+    height: 55%;
+    background-image: url(../img/bienvenue.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#bienvenue img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 2.5em;
+}
+#droite h2 {
+    background-color: black;
+    width: 60%;
+}
+
+#service {
+    width: 50%;
+    list-style-image: url(../img/fleche.gif);
+}
+#service img{
+    max-width: 100%;
+    height: auto;
+}
+#service ul {
+    position: relative;
+    left: 30px;
+}
+
+#une {
+    width: 50%;
+}
+
+#service a {
+    color: white;
+}
+
+/* fin style bloc de droite */
+
+/* début style formulaire */
+#formulaire {
+    width: 55%;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+}
+
+#form {
+    text-align: left;
+}
+
+input,textarea {
+    background-color: black;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    vertical-align: top;
+}
+button {
+    background-color: black;
+    color: white;
+    margin-left: 0.5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    margin-bottom: 3%;
+    display: inline-block;
+    width: 35%;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+textarea:focus {
+    background-color: white;
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#amateur {
+    width: 5%;
+}
+
+#pro {
+    width: 5%;
+}
+
+select {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+legend {
+    text-align: left;
+}
+
+fieldset {
+    border-radius: 5%;
+}
+
+#black {
+    margin-top: 2%;
+    padding: 0%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#PJ {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/* fin style formulaire */
+
+/* début style carte */
+#rejoindre {
+    width: 45%;
+    height: 0;
+}
+
+#rejoindre h2 {
+    width: 30%;
+    margin: auto;
+}
+#rejoindre:hover #carte {
+    cursor: pointer;
+    -webkit-transform: translateX(9.7%);
+    transform: translateX(9.7%);
+}
+#carte {
+    margin-top: 5%;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+}
+/* fin style carte */
+
+/* style du footer */
+footer {
+    margin-top: 1%;
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+}
+/* fin style du footer */
